@@ -1,0 +1,27 @@
+def binarySearchLeftmost(A, T):
+    retVal = None
+
+    left = 0
+    right = len(A) - 1
+
+    while left < right:
+        middle = (left + right) // 2
+        if A[middle] < T:
+            left = middle + 1
+        else:
+            right = middle
+
+    if A[left] == T:
+        retVal = left
+    
+    return retVal
+	
+----------------------------------------
+
+index = 0 1 2 3 4 5 6 7 8
+array = 1 2 3 4 5 6 7 8 9
+
+T = 	
+left = 
+right = 
+middle = 
